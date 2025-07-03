@@ -1,0 +1,17 @@
+<p>Table is just a mapping of objects to table rows with <code>&#64;for</code></p>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">cliente</th>
+			<th scope="col">Area</th>
+			<th scope="col">Population</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (cliente of clienteInfo; track cliente.cuentaCliente; let i = $index) {
+      <h1>{{cliente.cuentaCliente}}</h1>
+		}
+	</tbody>
+</table>
